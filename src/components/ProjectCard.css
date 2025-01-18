@@ -1,0 +1,104 @@
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #272727;
+  margin: 10px;
+  width: 35%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+      width: 100%;  /* Take full width on smaller screens */
+  }
+}
+
+.project-image {
+  max-width: 100%;
+  height: 300px; /* Set height to match width */
+  object-fit: cover; /* Change 'contain' to 'cover' if you want it to cover the whole area */
+  margin-top: 0;
+
+  @media (max-width: 480px) {
+      height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+.project-url {
+  display: block;
+  font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 8px;
+
+  @media (max-width: 480px) {
+      font-size: 0.8em;
+      margin-left: 5px;
+  }
+}
+
+.language {
+  color: #b1b1b1;
+  margin-bottom: 5px;
+
+  @media (max-width: 480px) {
+      font-size: 0.8em;
+  }
+}
+
+.project-info {
+  padding-top: 10px;
+}
+
+.project-name {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 550;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+
+  @media (max-width: 480px) {
+      font-size: 1em;
+      margin-left: 5px;
+  }
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+  @media (max-width: 480px) {
+      flex-direction: column;
+      margin: 5px;
+  }
+}
+
+.project-name:hover {
+  color: #acacac;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 5px;
+
+  @media (max-width: 480px) {
+      font-size: 0.9em;
+  }
+}
+
+.github-link:hover {
+  color: #747474;
+}
+
+.github-link svg {
+  margin-right: 8px;
+
+  @media (max-width: 480px) {
+      margin-right: 5px;
+  }
+}
