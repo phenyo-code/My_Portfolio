@@ -1,21 +1,33 @@
 const FeaturedUIDesigns = [
     {
       id: 1,
-      image: 'https://via.placeholder.com/400x300?text=UI+Design+1',
-      name: 'E-commerce Mobile App UI',
-      tools: 'Figma, Adobe XD',
-      description: 'UI design for an e-commerce mobile application.',
-      url: '#',  // No website link
+      image: require('../assets/ProjectImages/UniWork.png'),
+      name: 'UniEats - Food Delivery App',
+      tools: 'Figma, Sketch',
+      url: 'unieats',  // No website link
     },
+
     {
       id: 2,
-      image: 'https://via.placeholder.com/400x300?text=UI+Design+2',
-      name: 'Travel App Dashboard',
+      image: require('../assets/ProjectImages/FinoraWork.png'),
+      name: 'Finora - Virtual Banking',
       tools: 'Figma, Sketch',
-      description: 'Dashboard UI design for a travel app.',
-      url: '#',  // No website link
+      url: '/finora',  // No website link
     },
-    // Add more UI designs as needed
+
+    {
+      id: 3,
+      image: require('../assets/ProjectImages/RoomifyWork.png'),
+      name: 'Roomify - Online Accomodation Site ',
+      tools: 'Figma, Sketch',
+    },
+    
+    {
+      id: 4,
+      image: require('../assets/ProjectImages/NwuWork.png'),
+      name: 'NWU - Online Student Registration Site',
+      tools: 'Figma, Sketch',
+    },
   ];
   
   export default FeaturedUIDesigns;

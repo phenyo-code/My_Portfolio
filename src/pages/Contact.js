@@ -41,7 +41,7 @@ const Contact = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Your Name"
+          placeholder="Name"
           required
         />
         <input
@@ -49,14 +49,14 @@ const Contact = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Your Email"
+          placeholder="example@email.com"
           required
         />
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Your Message"
+          placeholder="How Can I Help You ?"
           required
         ></textarea>
         <button type="submit">Send Message</button>

@@ -24,7 +24,7 @@ const Services = () => {
           <FaLaptopCode className="service-icon" />
           <h2 className="service-title">Web Development</h2>
           <p className="service-description">
-            Custom, responsive websites built using modern technologies like React.js, Next.js, and Node.js to ensure exceptional performance and user experience.
+            Custom, responsive websites built using modern technologies such as React.js, Next.js, and Node.js to ensure exceptional performance and user experience.
           </p>
         </motion.div>
 

@@ -1,28 +1,7 @@
-
-
-  .tools-container {
-    background-color: #ffffff;
-    color: #fff;
-    text-align: center;
-    padding: 40px 5%;
-    border-bottom: 5px solid #ff4040;
-  }
-  
-
-  
-  .tech-icons {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .tech-icons img {
-    width: 50px;
-    height: 50px;
+.testimonial-header {
+margin-left: 20px;
   }
 
-  
   .testimonials {
     padding-left: 20px;
     background-color: #ffffff;
@@ -77,8 +56,9 @@
   }
   
   .toggle-icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: transform 0.3s ease;
+    color: #929292;
   }
   
   .testimonials.collapsed .toggle-icon {
@@ -90,6 +70,7 @@
   }
 
   .testimonials-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 20px;
+    margin-left: 60px;
   }

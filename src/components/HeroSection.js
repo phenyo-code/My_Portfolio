@@ -6,7 +6,7 @@ const messages = [
   "Backend Developer",
   "Software Engineer",
   "Full Stack Developer",
-  "UI Developer",
+  "Next.js Developer",
   "Web Developer",
   "Web Designer",
   "UI/UX Designer",
@@ -16,20 +16,45 @@ const messages = [
   "Frontend Developer",
 ];
 
+const colors = [
+  "#FFFFFF",
+  "#FFA07A",
+  "#ff4040", 
+  "#FFFFFF",
+  "#ff4040",
+  "#FFFFFF",
+  "#FFFFFF",
+  "#ff4040", 
+  "#FFFFFF",
+  "#FFFFFF",
+  "#00CED1",
+];
+
 const HeroSection = () => {
-  const [currentMessage, setCurrentMessage] = useState(messages[0]);
+  const [currentMessage, setCurrentMessage] = useState('');
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentMessage((prevMessage) => {
-        const currentIndex = messages.indexOf(prevMessage);
-        const nextIndex = (currentIndex + 1) % messages.length;
-        return messages[nextIndex];
-      });
-    }, 1500); // Change every 1.5 seconds
+    let charIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (charIndex < messages[index].length) {
+        setCurrentMessage(messages[index].substring(0, charIndex + 1));
+        charIndex += 1;
+      } else {
+        clearInterval(typingInterval); // Stop typing once the message is fully typed
+        setTimeout(() => {
+          // Move to the next message after typing is done
+          setIndex((index + 1) % messages.length); 
+          setCurrentMessage(''); // Reset the message for the next typing
+          charIndex = 0;
+        }, 1000); // Hold for 1 second before typing the next message
+      }
+    }, 120); // Typing speed: 120ms per character
 
-    return () => clearInterval(interval); // Clean up on component unmount
-  }, []);
+    return () => clearInterval(typingInterval); // Clean up on component unmount
+  }, [index]);
+
+
 
   return (
     <section className="hero">
@@ -38,22 +63,28 @@ const HeroSection = () => {
         muted
         loop
         className="hero-video"
-        src="https://videos.pexels.com/video-files/8721923/8721923-uhd_2732_1440_25fps.mp4" // Replace with the video URL
+        src="https://videos.pexels.com/video-files/8721923/8721923-uhd_2732_1440_25fps.mp4" 
         type="video/mp4"
       ></video>
 
       <div className="hero-overlay">
         <div className="hero-content">
           <motion.h2
-            initial={{ opacity: 0, y: -20 }} // Initial state for h2
+            initial={{ opacity: 0, y: -10 }} // Initial state for h2
             animate={{ opacity: 1, y: 0 }} // Final state for h2
             transition={{ duration: 0.5 }} // Animation for h2
           >
-            Console.log("{currentMessage}");
+            Console.log(<span style={{ color: colors[index] }}>"{currentMessage}"</span>);
           </motion.h2>
-          <p>
+
+          <motion.p 
+           initial={{ opacity: 0, y: -30 }} // Initial state
+           animate={{ opacity: 1, y: 0 }}   // Final state
+           transition={{ duration: 0.5, delay: 0.4  }}
+          >
             I’m a software engineer passionate about building efficient and scalable web applications from front-end to back-end.
-          </p>
+          </motion.p>
+
           <div className="hero-buttons">
             <motion.a
               href="/contact"

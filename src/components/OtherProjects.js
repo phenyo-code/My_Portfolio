@@ -1,7 +1,7 @@
 import React from 'react';
-import ProjectCard from './ProjectCard'; // Assuming you reuse the same card component
+import ProjectCard from './ProjectCard'; 
 import OtherProjects from '../data/OtherProject';
-import './MyWork.css'; // Reusing the same CSS styles
+import './MyWork.css'; 
 
 const OtherWork = () => {
   return (
@@ -11,7 +11,7 @@ const OtherWork = () => {
         {OtherProjects.map(project => (
           <ProjectCard
             key={project.id}
-            image={project.image} // Optional: Add placeholder or icons for GitHub-only projects
+            image={project.image} 
             name={project.name}
             language={project.language}
             githubLink={project.githubLink}

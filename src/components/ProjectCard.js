@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectCard.css';
-import { FaGithub } from 'react-icons/fa';  // GitHub icon
+import { FaGithub } from 'react-icons/fa';  
 
 const ProjectCard = ({ image, name, language, githubLink, url }) => {
   return (

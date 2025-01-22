@@ -6,6 +6,11 @@ import Footer from './pages/Footer';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Roomify from './CaseStudies/Roomify';
+import Nwu from './CaseStudies/Nwu';
+import Finora from './CaseStudies/Finora';
+import Unieats from './CaseStudies/Unieats';
+
 
 function App() {
   return (
@@ -16,6 +21,12 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/roomify" element={<Roomify />} />
+        <Route path="/nwu" element={<Nwu />} />
+        <Route path="/unieats" element={<Unieats />} />
+        <Route path="/finora" element={<Finora />} />
+
       </Routes>
       <Footer />
     </Router>

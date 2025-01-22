@@ -3,6 +3,7 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
+  align-items: center;
 }
 
 .hero-video {
@@ -28,6 +29,7 @@
   align-items: center;
   color: white;
   text-align: center;
+  align-items: center;
   padding: 20px;
   z-index: 1;
 }

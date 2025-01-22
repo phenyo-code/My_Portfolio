@@ -4,18 +4,18 @@ import MyWork from '../components/MyWork';
 import MyWorkUI from '../components/MyWorkUI';
 import OtherProjects from '../components/OtherProjects';
 import './Home.css';
-import { FaPlus } from 'react-icons/fa';  // Importing the plus icon from react-icons
-import { motion } from 'framer-motion';  // Import Framer Motion
+import { FaPlus } from 'react-icons/fa';  
+import { motion } from 'framer-motion';  
 
 const HomePage = () => {
   // State to manage visibility of the testimonials section
   const [areTestimonialsVisible, setAreTestimonialsVisible] = useState(false);
 
-  // State to manage visibility of the "Recently Working Work" section
+  // State to manage visibility of the "Recently Working On" section
   const [areRecentWorkVisible, setAreRecentWorkVisible] = useState(false);
 
   return (
-    <div>
+    <div className='home-container'>
       <HeroSection />
 
       <motion.div
@@ -26,36 +26,6 @@ const HomePage = () => {
         viewport={{ once: true }}
       >
 
-        <section className="tools">
-          <div className="tools-container">
-            <div className="tech-icons">
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" title="JavaScript" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" width="50" height="50" title="React.js" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50" title="Angular" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50" title="Node.js" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="50" height="50" title="Express" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="50" height="50" title="Postman" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50" title="MongoDB" />
-              </div>
-              <div className="tech-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" width="50" height="50" title="Next.js" />
-              </div>
-            </div>
-          </div>
-        </section>
 
         <MyWork />
 
@@ -67,7 +37,7 @@ const HomePage = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="testimonial-header" onClick={() => setAreTestimonialsVisible(!areTestimonialsVisible)}>
-            <h2 className="testimonial-title">Testimonials</h2>
+            <h3 className="testimonial-title">Testimonials</h3>
             <FaPlus className="toggle-icon" />
           </div>
           {areTestimonialsVisible && (
@@ -92,18 +62,23 @@ const HomePage = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="testimonial-header" onClick={() => setAreRecentWorkVisible(!areRecentWorkVisible)}>
-            <h2 className="testimonial-title">Recently Working On</h2>
+            <h3 className="testimonial-title">Recently Working On</h3>
             <FaPlus className="toggle-icon" />
           </div>
           {areRecentWorkVisible && (
             <>
               <div className="testimonial-card">
-                <p>"Developed an e-commerce app with React Native using Expo."</p>
-                <span>CodeCraft Team</span>
+                <p>I'm currently working on a modern e-commerce application using Next.js, focusing on 
+                  performance, SEO optimization, and a seamless user experience. The project involves designing 
+                  responsive layouts and integrating advanced features such as server-side rendering (SSR) and dynamic
+                   product filtering to enhance functionality.</p>
+                   <span>Freelance Project</span>
               </div>
               <div className="testimonial-card">
-                <p>"Worked on a UI design for a fashion show brochure."</p>
-                <span>Soro Fashion Team</span>
+                <p>I'm also working on a personal project called Auth-SDK, which simplifies authentication 
+                  processes, for developers, by providing a seamless and secure way to integrate user authentication, including features such as 
+                  email verification, password complexity enforcement, and OTP functionality, into applications.</p>
+                <span>Personal Project</span>
               </div>
             </>
           )}
