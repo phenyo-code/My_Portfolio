@@ -15,7 +15,7 @@ const OtherWork = () => {
             name={project.name}
             language={project.language}
             githubLink={project.githubLink}
-            url={null} // No live URLs for these projects
+            url={project.url}
           />
         ))}
       </div>
