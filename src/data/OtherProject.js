@@ -22,8 +22,8 @@ const OtherProjects = [
     },
     {
       id: 4,
-      image: require('../assets/ProjectImages/Smart-image.png'),
-      name: 'NextLab - Robust Online Code Editor For Next.js Developers.',
+      image: 'https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      name: 'NextLab - Online Code Editor For Next.js Developers.(In Progress)',
       language: 'Next.js, MongoDB',
       githubLink: 'https://github.com/username/ecommerce-app', // Project link
     },
