@@ -7,11 +7,91 @@ const Services = () => {
   return (
     <section className="services">
       <div className="services-header">
-        <h1 className="services-title">Services</h1>
-        <p className="services-intro">
-          We offer a range of high-quality services to help your business succeed in the digital world.
-        </p>
+        <h1 className="services-title">Skills</h1>
       </div>
+
+      <section className="tools">
+      <div className="tools-container">
+        <motion.div
+          className="tech-icons"
+          animate={{ x: [0, 50, 0] }}  // Animation movement
+          transition={{ duration: 1, ease: "easeInOut", staggerChildren: 0.2 }}
+        >
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "-200%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" title="JavaScript" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" width="50" height="50" title="React.js" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "-700%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50" title="Angular" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50" title="Node.js" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "-900%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="50" height="50" title="Express" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="50" height="50" title="Postman" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "-500%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50" title="MongoDB" />
+          </motion.div>
+
+          <motion.div
+            className="tech-icon"
+            initial={{ x: "-900%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" width="50" height="50" title="Next.js" />
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+
 
       <div className="services-container">
         {/* Web Development */}
@@ -52,7 +132,7 @@ const Services = () => {
           <FaChartLine className="service-icon" />
           <h2 className="service-title">SEO Optimization</h2>
           <p className="service-description">
-            Improve your website's search engine ranking with our on-page and off-page SEO strategies to drive traffic and grow your business.
+            Improve websites' search engine ranking with on-page and off-page SEO strategies to drive traffic.
           </p>
         </motion.div>
       </div>

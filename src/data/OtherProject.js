@@ -1,11 +1,12 @@
 const OtherProjects = [
     {
       id: 1,
-      name: 'E-commerce - Frontend Using Mock Data With Filtering And Admin Dashboard.',
-      language: 'React.js',
-      githubLink: 'https://github.com/phenyo-code/ecommerce-frontend.git',
-      url: 'https://github.com/phenyo-code/ecommerce-frontend.git',  // Project link
-      image: require('../assets/ProjectImages/Flare-image.png'), 
+      image: 'https://images.pexels.com/photos/1735559/pexels-photo-1735559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      name: 'Flare - Full Stack E-commerce With Admin Dashboard (In Progress)',
+      language: 'Next.js, MongoDB',
+      githubLink: 'https://github.com/username/ecommerce-app',
+      description: 'An e-commerce app built with React Native.',
+      url: 'https://no-website-url.com', 
     },
     {
       id: 2,
@@ -35,3 +36,5 @@ const OtherProjects = [
   
   export default OtherProjects;
   
+
+ 
