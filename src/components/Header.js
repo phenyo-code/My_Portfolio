@@ -27,7 +27,7 @@ const Header = () => {
             <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
           <li className={location.pathname === '/services' ? 'active' : ''}>
-            <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
+            <Link to="/services" onClick={() => setIsMenuOpen(false)}>Skills</Link>
           </li>
           <li className={location.pathname === '/about' ? 'active' : ''}>
             <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>

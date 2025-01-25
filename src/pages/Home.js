@@ -29,30 +29,7 @@ const HomePage = () => {
 
         <MyWork />
 
-        {/* Testimonials Section */}
-        <motion.section
-          className="testimonials"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="testimonial-header" onClick={() => setAreTestimonialsVisible(!areTestimonialsVisible)}>
-            <h3 className="testimonial-title">Testimonials</h3>
-            <FaPlus className="toggle-icon" />
-          </div>
-          {areTestimonialsVisible && (
-            <>
-              <div className="testimonial-card">
-                <p>"Phenyo's work is top-notch! Great attention to detail and creativity."</p>
-                <span>DesignCraft Team</span>
-              </div>
-              <div className="testimonial-card">
-                <p>"A true professional, delivering on time and with fantastic results."</p>
-                <span>Finora Marketing Manager</span>
-              </div>
-            </>
-          )}
-        </motion.section>
+   
 
         {/* "Recently Working Work" Section */}
         <motion.section
