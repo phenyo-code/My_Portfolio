@@ -1,11 +1,53 @@
 import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion'; 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism'; // Using Prism default theme
+import { RiFileCopyLine } from 'react-icons/ri'; // Using Remix Icon for File Copy
 
 const About = () => {
+  const npmInstallCode = `npm install phenyo`;
+  const importCode = `import { AboutMe } from 'phenyo';
+console.log(AboutMe);`;
+
+  // Function to copy text to clipboard
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Code copied to clipboard!');
+    }).catch((err) => {
+      console.error('Failed to copy text: ', err);
+    });
+  };
+
   return (
     <section className="about">
       <div className="about-header">
+        {/* Code Box for npm install */}
+        <div className="code-box">
+          <button className="copy-btn" onClick={() => copyToClipboard(npmInstallCode)}>
+            <RiFileCopyLine /> {/* Clipboard icon */}
+          </button>
+          <SyntaxHighlighter
+            language="bash"
+            style={prism} // Use prism theme here
+          >
+            {npmInstallCode}
+          </SyntaxHighlighter>
+        </div>
+        
+        {/* Code Box for Import */}
+        <div className="code-box">
+          <button className="copy-btn" onClick={() => copyToClipboard(importCode)}>
+            <RiFileCopyLine /> {/* Clipboard icon */}
+          </button>
+          <SyntaxHighlighter
+            language="javascript"
+            style={prism} // Use prism theme here
+          >
+            {importCode}
+          </SyntaxHighlighter>
+        </div>
+
         <motion.h1
           className="about-title"
           initial={{ opacity: 0, y: -50 }}  // Initial state
@@ -23,93 +65,7 @@ const About = () => {
           I'm Phenyo Koikoi, a passionate Web Developer, Product Designer, and SEO Specialist dedicated to crafting impactful digital experiences.
         </motion.p>
       </div>
-
-
-      <section className="tools">
-      <div className="tools-container">
-        <motion.div
-          className="tech-icons"
-          animate={{ x: [0, 50, 0] }}  // Animation movement
-          transition={{ duration: 1, ease: "easeInOut", staggerChildren: 0.2 }}
-        >
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "-200%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" title="JavaScript" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" width="50" height="50" title="React.js" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "-700%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50" title="Angular" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50" title="Node.js" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "-900%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="50" height="50" title="Express" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="50" height="50" title="Postman" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "-500%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50" title="MongoDB" />
-          </motion.div>
-
-          <motion.div
-            className="tech-icon"
-            initial={{ x: "-900%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" width="50" height="50" title="Next.js" />
-          </motion.div>
-        </motion.div>
-      </div>
-    </section>
-
-
-    
-
+  
       <div className="about-content">
         <motion.div
           className="about-text"
@@ -138,4 +94,8 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
 

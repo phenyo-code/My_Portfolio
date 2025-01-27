@@ -2,12 +2,11 @@
 const FeaturedProjects = [
     {
         id: 1,
-        image: 'https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        name: 'Roomify - Find Your Perfect Stay With A Wide Variety Of Accommodations.',
-        language: 'Next.js, Tailwind CSS',
-        githubLink: 'https://github.com/phenyo-code/roomify.git',
-        description: 'An e-commerce app built with React Native.',
-        url: 'https://roooomify.vercel.app/',   // Project link
+        name: 'JobMatch - Compare your resume with a job description and receieve feedback.',
+        language: 'React.js',
+        githubLink: 'https://github.com/phenyo-code/match-jobs.git',
+        url: 'https://match-jobs.vercel.app/',  // Project link
+        image: require('../assets/ProjectImages/jobmatch.png'),  
       },
       {
         id: 2,
@@ -20,11 +19,12 @@ const FeaturedProjects = [
       },
       {
         id: 3,
-        name: 'E-commerce - Frontend Using Mock Data With Filtering And Admin Dashboard.',
-        language: 'React.js',
-        githubLink: 'https://github.com/phenyo-code/ecommerce-frontend.git',
-        url: 'https://github.com/phenyo-code/ecommerce-frontend.git',  // Project link
-        image: require('../assets/ProjectImages/Flare-image.png'),  // Project link
+        image: 'https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        name: 'Roomify - Find Your Perfect Stay With A Wide Variety Of Accommodations.',
+        language: 'Next.js, Tailwind CSS',
+        githubLink: 'https://github.com/phenyo-code/roomify.git',
+        description: 'An e-commerce app built with React Native.',
+        url: 'https://roooomify.vercel.app/',
       },
       {
         id: 4,
@@ -43,3 +43,6 @@ const FeaturedProjects = [
 
 
          // Project link
+
+
+         
