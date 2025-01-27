@@ -2,7 +2,7 @@
 const FeaturedProjects = [
     {
         id: 1,
-        name: 'JobMatch - Compare your resume with a job description and receieve feedback.',
+        name: 'JobMatch - Compare your resume with a job description and receive feedback.',
         language: 'React.js',
         githubLink: 'https://github.com/phenyo-code/match-jobs.git',
         url: 'https://match-jobs.vercel.app/',  // Project link
