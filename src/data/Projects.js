@@ -6,7 +6,7 @@ const FeaturedProjects = [
         language: 'React.js',
         githubLink: 'https://github.com/phenyo-code/match-jobs.git',
         url: 'https://match-jobs.vercel.app/',  // Project link
-        image: require('../assets/ProjectImages/jobmatch.png'),  
+        image: 'https://images.pexels.com/photos/4226115/pexels-photo-4226115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',  
       },
       {
         id: 2,
