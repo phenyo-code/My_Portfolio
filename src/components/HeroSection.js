@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 import './HeroSection.css';
 
 const messages = [
-  "Backend Developer",
   "Software Engineer",
-  "Full Stack Developer",
   "Next.js Developer",
   "Web Developer",
-  "Web Designer",
-  "UI/UX Designer",
   "React Developer",
-  "Node.js Developer",
-  "MERN Stack Developer",
-  "Frontend Developer",
+  "Software Engineer",
+  "Next.js Developer",
+  "Web Developer",
+  "React Developer",
+  "Next.js Developer",
+  "Web Developer",
+  "React Developer",
 ];
 
 const colors = [
@@ -37,14 +37,14 @@ const HeroSection = () => {
   useEffect(() => {
     let charIndex = 0;
     const typingInterval = setInterval(() => {
-      if (charIndex < messages[index].length) {
+      if (charIndex < (messages[index] || '').length) {
         setCurrentMessage(messages[index].substring(0, charIndex + 1));
         charIndex += 1;
       } else {
         clearInterval(typingInterval); // Stop typing once the message is fully typed
         setTimeout(() => {
           // Move to the next message after typing is done
-          setIndex((index + 1) % messages.length); 
+          setIndex((prevIndex) => (prevIndex + 1) % messages.length); // Safe index update
           setCurrentMessage(''); // Reset the message for the next typing
           charIndex = 0;
         }, 1000); // Hold for 1 second before typing the next message
@@ -53,8 +53,6 @@ const HeroSection = () => {
 
     return () => clearInterval(typingInterval); // Clean up on component unmount
   }, [index]);
-
-
 
   return (
     <section className="hero">
@@ -80,7 +78,7 @@ const HeroSection = () => {
           <motion.p 
            initial={{ opacity: 0, y: -30 }} // Initial state
            animate={{ opacity: 1, y: 0 }}   // Final state
-           transition={{ duration: 0.5, delay: 0.4  }}
+           transition={{ duration: 0.5, delay: 0.4 }}
           >
             I’m a software engineer passionate about building efficient and scalable web applications from front-end to back-end.
           </motion.p>

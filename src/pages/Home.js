@@ -8,9 +8,6 @@ import { FaPlus } from 'react-icons/fa';
 import { motion } from 'framer-motion';  
 
 const HomePage = () => {
-  // State to manage visibility of the testimonials section
-  const [areTestimonialsVisible, setAreTestimonialsVisible] = useState(false);
-
   // State to manage visibility of the "Recently Working On" section
   const [areRecentWorkVisible, setAreRecentWorkVisible] = useState(false);
 
