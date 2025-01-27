@@ -21,10 +21,10 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Follow Me</h4>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a> {/* GitHub link */}
+            <a href="https://web.facebook.com/phenyo.trigger.98/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://github.com/phenyo-code" target="_blank" rel="noopener noreferrer"><FaGithub /></a> {/* GitHub link */}
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/phenyo-koikoi-96a976310/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
         </div>
 
