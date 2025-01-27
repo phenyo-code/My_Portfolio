@@ -36,7 +36,7 @@ const HomePage = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="testimonial-header" onClick={() => setAreRecentWorkVisible(!areRecentWorkVisible)}>
-            <h3 className="testimonial-title">Recently Working On</h3>
+            <h3 className="testimonial-title">Currently Working On</h3>
             <FaPlus className="toggle-icon" />
           </div>
           {areRecentWorkVisible && (
