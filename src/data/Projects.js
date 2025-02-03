@@ -35,15 +35,6 @@ const FeaturedProjects = [
         description: 'An e-commerce app built with React Native.',
         url: 'https://roooomify.vercel.app/',
       },
-      {
-        id: 1,
-        image: 'https://flare-shop.vercel.app/opengraph-image.png',
-      name: 'Flare - Full Stack E-commerce(In Progress) But You can Still Check It Out',
-      language: 'Next.js, MongoDB, TailwindCSS',
-      githubLink: 'https://github.com/username/ecommerce-app',
-      description: 'An e-commerce app built with React Native.',
-      url: 'https://flare-shop.vercel.app/',   // Project link
-      },
   ];
   
   export default FeaturedProjects; // Export the FeaturedProjects;
