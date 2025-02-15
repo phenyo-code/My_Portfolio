@@ -5,7 +5,7 @@ const FeaturedProjects = [
     image: 'https://flare-shop.vercel.app/opengraph-image.png',
   name: 'Flare - Full Stack E-commerce(In Progress) But You can Still Check It Out',
   language: 'Next.js, MongoDB, TailwindCSS',
-  githubLink: 'https://github.com/username/ecommerce-app',
+  githubLink: 'https://github.com/phenyo-code/flare.git',
   description: 'An e-commerce app built with React Native.',
   url: 'https://flare-shop.vercel.app/',   // Project link
   },
