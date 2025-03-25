@@ -2,21 +2,22 @@
 const FeaturedProjects = [
   {
     id: 1,
-    image: 'https://flare-shop.vercel.app/opengraph-image.png',
-  name: 'Flare - Full Stack E-commerce(In Progress) But You can Still Check It Out',
+    image: require('../assets/ProjectImages/flux.png'),
+  name: 'Morph - No code web builder (In Progress) But You can Still Check It Out',
   language: 'Next.js, MongoDB, TailwindCSS',
-  githubLink: 'https://github.com/phenyo-code/flare.git',
+  githubLink: 'https://github.com/phenyo-code/flux.git',
   description: 'An e-commerce app built with React Native.',
-  url: 'https://flare-shop.vercel.app/',   // Project link
+  url: 'https://morph-builder.vercel.app/',   // Project link
   },
     {
-        id: 2,
-        name: 'JobMatch - Compare your resume with a job description and receive feedback.',
-        language: 'React.js',
-        githubLink: 'https://github.com/phenyo-code/match-jobs.git',
-        url: 'https://match-jobs.vercel.app/',  // Project link
-        image: 'https://images.pexels.com/photos/4226115/pexels-photo-4226115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',  
-      },
+      id: 2,
+      image: 'https://flare-shop.vercel.app/opengraph-image.png',
+    name: 'Flare - Full Stack E-commerce App With Admin Panel, User Authentication, And More.',
+    language: 'Next.js, MongoDB, TailwindCSS',
+    githubLink: 'https://github.com/phenyo-code/flare.git',
+    description: 'An e-commerce app built with React Native.',
+    url: 'https://flare-shop.vercel.app/',   // Project link
+    },
       {
         id: 3,
         image: "https://cloudmatetechnologies.com/wp-content/uploads/2024/06/react.js.png",
