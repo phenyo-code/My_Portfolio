@@ -6,7 +6,7 @@ import './MyWork.css';
 const OtherWork = () => {
   return (
     <section className="my-work">
-      <h2 className="section-title">Other Projects (not hosted)</h2>
+      <h2 className="section-title">Other Projects</h2>
       <div className="project-container">
         {OtherProjects.map(project => (
           <ProjectCard

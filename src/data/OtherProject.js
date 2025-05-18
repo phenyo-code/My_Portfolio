@@ -24,14 +24,15 @@ const OtherProjects = [
       url: 'https://github.com/donaldlwandle/smart-health-react-native.git',  // Project link
       image: require('../assets/ProjectImages/Smart-image.png'),
     },
-    {
-      id: 4,
-      image: 'https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      name: 'NextLab - Online Code Editor For Next.js Developers.(In Progress)',
-      language: 'Next.js, MongoDB',
-      githubLink: 'https://github.com/username/ecommerce-app', // Project link
-      url: 'https://github.com/username/ecommerce-app',  // Project link
-    },
+          {
+        id: 4,
+        image: 'https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        name: 'Roomify - Find Your Perfect Stay With A Wide Variety Of Accommodations.',
+        language: 'Next.js, Tailwind CSS',
+        githubLink: 'https://github.com/phenyo-code/roomify.git',
+        description: 'An e-commerce app built with React Native.',
+        url: 'https://roooomify.vercel.app/',
+      },
   ];
   
   export default OtherProjects;
