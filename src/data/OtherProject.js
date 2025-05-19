@@ -9,13 +9,14 @@ const OtherProjects = [
       url: 'https://flare-shop.vercel.app/', 
     },
     {
-      id: 2,
-      name: 'Sientific Calculator - Advanced Operations Such As Power, Square Root,  Inverse etc.  ',
-      language: 'React Native',
-      githubLink: 'https://github.com/phenyo-code/scientific-calculator.git',
-      url: 'https://github.com/phenyo-code/scientific-calculator.git',  // Project link
-      image: require('../assets/ProjectImages/calculator.jpeg'),
-    },
+        id: 4,
+        image: "https://cloudmatetechnologies.com/wp-content/uploads/2024/06/react.js.png",
+        name: 'ReactLab - Learn React.js From Scratch With Advanced Concepts',
+        language: 'Next.js, Tailwind CSS',
+        githubLink: 'https://github.com/phenyo-code/reactlab.git',
+        description: 'An e-commerce app built with React Native.',
+        url: 'https://reactlab-one.vercel.app',  // Project link
+      },
     {
       id: 3,
       name: 'Smart Health - Electronic Health Records System (EHR) App',
@@ -33,6 +34,7 @@ const OtherProjects = [
         description: 'An e-commerce app built with React Native.',
         url: 'https://roooomify.vercel.app/',
       },
+
   ];
   
   export default OtherProjects;
